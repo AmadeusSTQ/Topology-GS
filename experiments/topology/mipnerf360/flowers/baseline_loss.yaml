@@ -1,0 +1,30 @@
+META_ARC: "Topology-GS"
+CUDA: True
+
+MODEL:
+  DATA_DEVICE: "cuda"
+  FEAT_DIM: 32
+  USE_FEAT_BANK: False
+  EVAL: True
+  SOURCE_PATH: "data/mipnerf360/flowers"
+  MODEL_PATH: "output/mipnerf360/baseline_loss/flowers"
+  LOD: 0
+
+OPTIM:
+  ITERATIONS: 30_000
+  TEST_ITERATIONS: [20_000, 25_000, 30_000]
+  SAVE_ITERATIONS: [20_000, 25_000, 30_000]  # must include ITERATIONS
+  UPDATE_FROM: 1500
+  UPDATE_UNTIL: 15_000
+
+  DENSIFY_GRAD_THRESHOLD: 0.0002
+
+  USE_PERS_LOSS: True
+  PERSISTENCE:
+    RATIO: 0.06
+    MODE: 'area'
+    LAMBDA: 10.0
+    START: 1500
+    END: 15_000
+    INTERVAL: 200
+    KS: [10, 20, 50]

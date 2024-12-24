@@ -1,0 +1,19 @@
+META_ARC: "Scaffold-GS"
+CUDA: True
+
+MODEL:
+  DATA_DEVICE: "cuda"
+  FEAT_DIM: 32
+  USE_FEAT_BANK: False
+  EVAL: True
+  SOURCE_PATH: "data/tandt/train"
+  MODEL_PATH: "output/tandt/baseline/train"
+  LOD: 0
+  VOXEL_SIZE: 0.01
+
+OPTIM:
+  ITERATIONS: 1600
+  TEST_ITERATIONS: [1600, 25_000, 30_000]
+  SAVE_ITERATIONS: [1600, 25_000, 30_000]  # must include ITERATIONS
+  UPDATE_FROM: 1500
+  UPDATE_UNTIL: 1550

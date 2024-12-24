@@ -1,0 +1,28 @@
+META_ARC: "Topology-GS"
+CUDA: True
+
+MODEL:
+  DATA_DEVICE: "cuda"
+  FEAT_DIM: 32
+  USE_FEAT_BANK: False
+  EVAL: True
+  SOURCE_PATH: "data/tandt/train"
+  MODEL_PATH: "output/tandt/baseline_aug/train"
+  LOD: 0
+  VOXEL_SIZE: 0.01
+
+OPTIM:
+  ITERATIONS: 30_000
+  TEST_ITERATIONS: [20_000, 25_000, 30_000]
+  SAVE_ITERATIONS: [20_000, 25_000, 30_000]  # must include ITERATIONS
+  UPDATE_FROM: 1500
+  UPDATE_UNTIL: 15_000
+
+DATA:
+  INTERPOLATION: True
+
+  TANDT:
+    TRAIN:
+      K_MAX: 16
+      K_MIN: 8
+      THRESHOLD: 0.25
