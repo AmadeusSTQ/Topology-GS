@@ -1,13 +1,13 @@
 # [AAAI2025] Topology-Aware 3D Gaussian Splatting: Leveraging Persistent Homology for Optimized Structural Integrity
 
-[Tianqi Shen](https://github.com/AmadeusSTQ), [Shaohua Liu](https://github.com/ShaohuaL), [Jiaqi Feng](https://github.com/fengjiaqi927), [Ziye Ma](https://gavenma.github.io/), [Ning An]() <br />
+[Tianqi Shen](https://github.com/AmadeusSTQ), [Shaohua Liu](https://github.com/ShaohuaL), [Jiaqi Feng](https://github.com/fengjiaqi927), [Ziye Ma](https://gavenma.github.io/), [Ning An*]() <br />
 
 
-[[`Project Page`]()][[`arxiv`](https://arxiv.org/abs/2412.16619)]
+[[`Project Page`]()][[`Arxiv`](https://arxiv.org/abs/2412.16619)]
 
 ## News
 
-**[2024.12.25]** We release the codes, Marry Christmas!
+**[2024.12.25]** We release the codes, Merry Christmas!
 
 ## TODO List
 - [ ] Provide the environment file for the codes: ```environment.yml```
